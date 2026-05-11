@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Modul Elektronik Interaktif RBT Tingkatan 2
+  </title>
+
+  <link rel="stylesheet"
+    href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+
+  <header id="navbar-container"></header>
+
+  <!-- ===================== HERO SECTION ===================== -->
+
+  <section class="hero">
+
+    <!-- SLIDE 1 -->
+
+    <div class="slide active"
+      style="
+      background-image:
+      linear-gradient(rgba(0,0,0,0.60),
+      rgba(0,0,0,0.60)),
+      url('images/slide1.jpg');
+      ">
+    </div>
+
+    <!-- SLIDE 2 -->
+
+    <div class="slide"
+      style="
+      background-image:
+      linear-gradient(rgba(0,0,0,0.60),
+      rgba(0,0,0,0.60)),
+      url('images/slide2.jpg');
+      ">
+    </div>
+
+    <!-- SLIDE 3 -->
+
+    <div class="slide"
+      style="
+      background-image:
+      linear-gradient(rgba(0,0,0,0.60),
+      rgba(0,0,0,0.60)),
+      url('images/slide3.jpg');
+      ">
+    </div>
+
+    <!-- HERO CONTENT -->
+
+    <div class="hero-content">
+
+      <span class="hero-tag">
+        RBT Tingkatan 2 • Elektronik Interaktif
+      </span>
+
+      <h1>
+
+        Modul Elektronik
+        <br>
+
+        Interaktif RBT
+        Tingkatan 2
+
+      </h1>
+
+      <p>
+
+        Pembelajaran interaktif berasaskan
+        gamifikasi untuk memahami sistem
+        elektrik secara kreatif, menyeronokkan
+        dan berasaskan teknologi abad ke-21.
+
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="modul1.html"
+          class="btn">
+
+          Mulakan Pembelajaran
+
+        </a>
+
+        <a href="#learning"
+          class="btn-outline">
+
+          Terokai Modul
+
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- SLIDER BUTTON -->
+
+    <button class="slider-btn prev"
+      onclick="prevSlide()">
+
+      ❮
+
+    </button>
+
+    <button class="slider-btn next"
+      onclick="nextSlide()">
+
+      ❯
+
+    </button>
+
+    <!-- DOTS -->
+
+    <div class="dots">
+
+      <span class="dot active-dot"
+        onclick="currentSlide(0)">
+      </span>
+
+      <span class="dot"
+        onclick="currentSlide(1)">
+      </span>
+
+      <span class="dot"
+        onclick="currentSlide(2)">
+      </span>
+
+    </div>
+
+    <!-- SCROLL INDICATOR -->
+
+    <div class="scroll-indicator">
+
+      ↓ Scroll
+
+    </div>
+
+  </section>
+
+  <!-- ===================== INTRO SECTION ===================== -->
+
+  <section class="intro-section">
+
+    <div class="intro-text">
+
+      <span class="section-tag">
+
+        Pembelajaran Abad Ke-21
+
+      </span>
+
+      <h2>
+
+        Kenapa Belajar
+        Sistem Elektrik?
+
+      </h2>
+
+      <p>
+
+        Sistem elektrik digunakan dalam
+        hampir semua peralatan harian seperti
+        lampu, kipas, televisyen dan telefon pintar.
+
+        Melalui modul ini, murid akan memahami
+        elemen sistem elektrik, keselamatan litar
+        dan analisis komponen elektrik secara
+        interaktif dan menyeronokkan.
+
+      </p>
+
+      <a href="modul1.html"
+        class="btn">
+
+        Mulakan Sekarang
+
+      </a>
+
+    </div>
+
+    <div class="intro-image">
+
+      <img src="images/electric-learning.jpg"
+        alt="Pembelajaran Elektrik">
+
+    </div>
+
+  </section>
+
+  <!-- ===================== LEARNING OUTCOME ===================== -->
+
+  <section class="learning-outcome"
+    id="learning">
+
+    <h2>
+      Hasil Pembelajaran
+    </h2>
+
+    <div class="cards">
+
+      <!-- CARD 1 -->
+
+      <div class="card">
+
+        <div class="card-icon">
+          ⚡
+        </div>
+
+        <h3>
+          SP 2.2.1
+        </h3>
+
+        <p>
+
+          Mengenal pasti dan menjelaskan
+          elemen sistem elektrik seperti
+          sumber, medium, beban dan kawalan.
+
+        </p>
+
+      </div>
+
+      <!-- CARD 2 -->
+
+      <div class="card">
+
+        <div class="card-icon">
+          🔌
+        </div>
+
+        <h3>
+          SP 2.2.2
+        </h3>
+
+        <p>
+
+          Menunjuk cara reka bentuk litar
+          elektrik yang selamat dan sistematik.
+
+        </p>
+
+      </div>
+
+      <!-- CARD 3 -->
+
+      <div class="card">
+
+        <div class="card-icon">
+          🧠
+        </div>
+
+        <h3>
+          SP 2.2.5
+        </h3>
+
+        <p>
+
+          Menganalisis elemen sistem elektrik
+          pada gajet yang akan dihasilkan.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+
+  <section class="features">
+
+    <h2>
+      Pengalaman Pembelajaran Interaktif
+    </h2>
+
+    <div class="feature-grid">
+
+      <!-- FEATURE 1 -->
+
+      <div class="feature-card">
+
+        <div class="feature-icon">
+
+          ⚡
+
+        </div>
+
+        <h3>
+
+          Simulasi Elektrik
+
+        </h3>
+
+        <p>
+
+          Belajar membina litar elektrik
+          menggunakan simulasi interaktif.
+
+        </p>
+
+      </div>
+
+      <!-- FEATURE 2 -->
+
+      <div class="feature-card">
+
+        <div class="feature-icon">
+
+          🎮
+
+        </div>
+
+        <h3>
+
+          Gamifikasi
+
+        </h3>
+
+        <p>
+
+          Dapatkan badge, pencapaian
+          dan progress pembelajaran.
+
+        </p>
+
+      </div>
+
+      <!-- FEATURE 3 -->
+
+      <div class="feature-card">
+
+        <div class="feature-icon">
+
+          🧠
+
+        </div>
+
+        <h3>
+
+          KBAT Challenge
+
+        </h3>
+
+        <p>
+
+          Menyelesaikan masalah berkaitan
+          sistem elektrik dunia sebenar.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===================== STATS SECTION ===================== -->
+
+  <section class="stats-section">
+
+    <div class="stat-box">
+
+      <h2>
+        3
+      </h2>
+
+      <p>
+        Modul Pembelajaran
+      </p>
+
+    </div>
+
+    <div class="stat-box">
+
+      <h2>
+        20+
+      </h2>
+
+      <p>
+        Aktiviti Interaktif
+      </p>
+
+    </div>
+
+    <div class="stat-box">
+
+      <h2>
+        100%
+      </h2>
+
+      <p>
+        Responsive Learning
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- ===================== VIDEO PREVIEW ===================== -->
+
+  <section class="video-preview">
+
+    <h2>
+
+      Video Pembelajaran
+
+    </h2>
+
+    <p class="video-subtitle">
+
+      Tonton pengenalan sistem elektrik
+      sebelum memulakan pembelajaran.
+
+    </p>
+
+    <div class="video-container">
+
+      <iframe
+        src="https://www.youtube.com/embed/YOUTUBE_ID"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
+  </section>
+
+  <!-- ===================== PROGRESS SECTION ===================== -->
+
+  <section class="progress-section">
+
+    <div class="progress-card">
+
+      <h2>
+
+        Progress Pembelajaran
+
+      </h2>
+
+      <div class="progress-bar">
+
+        <div class="progress-fill"
+          id="progressFill">
+        </div>
+
+      </div>
+
+      <p id="progressText">
+
+        0% selesai
+
+      </p>
+
+      <button class="btn"
+        onclick="resetProgress()">
+
+        Reset Progress
+
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- ===================== CTA SECTION ===================== -->
+
+  <section class="cta-section">
+
+    <h2>
+
+      Bersedia Menjadi
+      Pakar Elektrik Muda?
+
+    </h2>
+
+    <p>
+
+      Mulakan pembelajaran interaktif anda
+      sekarang dan terokai dunia elektronik.
+
+    </p>
+
+    <a href="modul1.html"
+      class="btn">
+
+      Mulakan Sekarang
+
+    </a>
+
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+
+  <footer>
+
+    <p>
+
+      © 2026 Modul Elektronik Interaktif
+      RBT Tingkatan 2
+
+    </p>
+
+  </footer>
+
+  <!-- ===================== SCRIPT ===================== -->
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

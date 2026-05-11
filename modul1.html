@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html lang="ms">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Modul 1 - Elemen Sistem Elektrik
+  </title>
+
+  <link rel="stylesheet"
+    href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+
+<header id="navbar-container"></header>
+
+<!-- ===================== HERO ===================== -->
+
+<section class="module-hero">
+
+  <div class="module-overlay"></div>
+
+  <div class="module-content">
+
+    <span class="module-tag">
+
+      Modul 1 • SP 2.2.1
+
+    </span>
+
+    <h1>
+
+      Elemen Sistem Elektrik
+
+    </h1>
+
+    <p>
+
+      Terokai bagaimana sistem elektrik
+      berfungsi dalam kehidupan seharian.
+
+    </p>
+
+    <a href="#story"
+      class="btn">
+
+      Mulakan Eksplorasi
+
+    </a>
+
+  </div>
+
+</section>
+
+<!-- ===================== STORY ===================== -->
+
+<section class="story-section"
+  id="story">
+
+  <div class="story-card">
+
+    <div class="story-icon">
+
+      💡
+
+    </div>
+
+    <div class="story-text">
+
+      <h2>
+
+        Situasi Dunia Sebenar
+
+      </h2>
+
+      <p>
+
+        Amir ingin membina lampu belajar.
+        Namun lampu tersebut tidak menyala.
+
+        Apakah elemen sistem elektrik
+        yang diperlukan supaya lampu
+        boleh berfungsi dengan baik?
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===================== VIDEO ===================== -->
+
+<section class="video-preview">
+
+  <h2>
+
+    Video Pembelajaran
+
+  </h2>
+
+  <div class="video-container">
+
+    <iframe
+      src="https://www.youtube.com/embed/YOUTUBE_ID"
+      allowfullscreen>
+    </iframe>
+
+  </div>
+
+</section>
+
+<!-- ===================== INFOGRAPHIC ===================== -->
+
+<section class="infographic-section">
+
+  <h2>
+
+    Aliran Sistem Elektrik
+
+  </h2>
+
+  <div class="timeline">
+
+    <div class="timeline-box">
+
+      ⚡
+
+      <h3>Sumber</h3>
+
+    </div>
+
+    <div class="timeline-arrow">
+
+      ➜
+
+    </div>
+
+    <div class="timeline-box">
+
+      🔌
+
+      <h3>Medium</h3>
+
+    </div>
+
+    <div class="timeline-arrow">
+
+      ➜
+
+    </div>
+
+    <div class="timeline-box">
+
+      🎛
+
+      <h3>Kawalan</h3>
+
+    </div>
+
+    <div class="timeline-arrow">
+
+      ➜
+
+    </div>
+
+    <div class="timeline-box">
+
+      💡
+
+      <h3>Beban</h3>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===================== SIMULATION ===================== -->
+
+<section class="simulation-section">
+
+  <h2>
+
+    Simulasi Mini Elektrik
+
+  </h2>
+
+  <p>
+
+    Tekan suis untuk menyalakan mentol.
+
+  </p>
+
+  <div class="circuit-area">
+
+    <img id="bulb"
+      src="images/bulb-off.png"
+      alt="Mentol">
+
+    <button class="btn"
+      onclick="toggleBulb()">
+
+      Tekan Suis
+
+    </button>
+
+  </div>
+
+</section>
+
+<!-- ===================== ELEMENTS ===================== -->
+
+<section class="elements-section">
+
+  <h2>
+
+    Elemen Sistem Elektrik
+
+  </h2>
+
+  <div class="cards">
+
+    <!-- SOURCE -->
+
+    <div class="smart-card">
+
+      <img src="images/battery.png">
+
+      <h3>Sumber</h3>
+
+      <p>
+
+        Membekalkan tenaga elektrik.
+
+      </p>
+
+      <div class="extra-info">
+
+        Contoh:
+        bateri dan bekalan kuasa.
+
+      </div>
+
+    </div>
+
+    <!-- MEDIUM -->
+
+    <div class="smart-card">
+
+      <img src="images/wire.png">
+
+      <h3>Medium</h3>
+
+      <p>
+
+        Membawa arus elektrik.
+
+      </p>
+
+      <div class="extra-info">
+
+        Contoh:
+        wayar tembaga.
+
+      </div>
+
+    </div>
+
+    <!-- LOAD -->
+
+    <div class="smart-card">
+
+      <img src="images/bulb.png">
+
+      <h3>Beban</h3>
+
+      <p>
+
+        Menggunakan tenaga elektrik.
+
+      </p>
+
+      <div class="extra-info">
+
+        Contoh:
+        mentol dan kipas.
+
+      </div>
+
+    </div>
+
+    <!-- CONTROL -->
+
+    <div class="smart-card">
+
+      <img src="images/switch.png">
+
+      <h3>Kawalan</h3>
+
+      <p>
+
+        Mengawal arus elektrik.
+
+      </p>
+
+      <div class="extra-info">
+
+        Contoh:
+        suis elektrik.
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===================== QUIZ ===================== -->
+
+<section class="quiz-section">
+
+  <h2>
+
+    Quiz Gamifikasi
+
+  </h2>
+
+  <div class="quiz-card">
+
+    <h3>
+
+      Apakah fungsi medium
+      dalam sistem elektrik?
+
+    </h3>
+
+    <button class="quiz-btn"
+      onclick="checkQuiz(this,false)">
+
+      Menyimpan tenaga elektrik
+
+    </button>
+
+    <button class="quiz-btn"
+      onclick="checkQuiz(this,true)">
+
+      Membawa arus elektrik
+
+    </button>
+
+    <button class="quiz-btn"
+      onclick="checkQuiz(this,false)">
+
+      Mengawal suis
+
+    </button>
+
+  </div>
+
+</section>
+
+<!-- ===================== CHALLENGE ===================== -->
+
+<section class="challenge-box">
+
+  <h2>
+
+    🔥 Cabar Minda
+
+  </h2>
+
+  <p>
+
+    Mengapa wayar tembaga lebih sesuai
+    digunakan dalam sistem elektrik
+    berbanding plastik?
+
+  </p>
+
+  <textarea
+    id="challengeAnswer"
+    placeholder=
+    "Taip jawapan anda di sini...">
+  </textarea>
+
+  <button class="btn"
+    onclick="submitChallenge()">
+
+    Hantar Jawapan
+
+  </button>
+
+  <div id="challengeFeedback"
+    class="feedback-box">
+  </div>
+
+</section>
+<!-- ===================== COMPLETE ===================== -->
+
+<section class="module-complete">
+
+  <h2>
+
+    Tahniah!
+
+  </h2>
+
+  <p>
+
+    Anda telah menyelesaikan Modul 1.
+
+  </p>
+
+  <button class="btn"
+    onclick="completeModule(1)">
+
+    Tandakan Modul Selesai
+
+  </button>
+
+</section>
+
+<!-- ===================== SCRIPT ===================== -->
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
