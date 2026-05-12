@@ -1,7 +1,3 @@
-/* ================================================= */
-/* COMPLETE MODULE VALIDATION */
-/* ================================================= */
-
 function completeModule(moduleNumber){
 
   /* CHECK QUIZ */
@@ -18,7 +14,7 @@ function completeModule(moduleNumber){
     "challenge1Completed"
   );
 
-  /* QUIZ NOT DONE */
+  /* VALIDATION */
 
   if(quizDone !== "true"){
 
@@ -29,8 +25,6 @@ function completeModule(moduleNumber){
     return;
   }
 
-  /* CHALLENGE NOT DONE */
-
   if(challengeDone !== "true"){
 
     alert(
@@ -40,20 +34,47 @@ function completeModule(moduleNumber){
     return;
   }
 
-  /* COMPLETE MODULE */
+  /* SAVE MODULE */
 
   sessionStorage.setItem(
     `module${moduleNumber}`,
     "completed"
   );
 
+  updateProgress();
+
+  /* SUCCESS MESSAGE */
+
   alert(
     `🎉 Tahniah! Anda telah menyelesaikan Modul ${moduleNumber}`
   );
 
-  updateProgress();
+  /* AUTO REDIRECT */
+
+  if(moduleNumber === 1){
+
+    window.location.href =
+    "modul2.html";
+
+  }
+
+  else if(moduleNumber === 2){
+
+    window.location.href =
+    "modul3.html";
+
+  }
+
+  else if(moduleNumber === 3){
+
+    window.location.href =
+    "quiz.html";
+
+  }
 
 }
+
+
 /* ===================== UPDATE PROGRESS ===================== */
 function updateProgress() {
 
@@ -463,5 +484,203 @@ function submitChallenge(){
     );
 
   }
+
+}
+
+
+let circuitOn = false;
+
+function toggleCircuit(){
+
+  const bulb =
+  document.getElementById(
+    "circuitBulb"
+  );
+
+  if(!circuitOn){
+
+    bulb.src =
+    "images/bulb-on.png";
+
+    bulb.style.filter =
+    "drop-shadow(0 0 40px yellow)";
+
+    circuitOn = true;
+  }
+
+  else{
+
+    bulb.src =
+    "images/bulb-off.png";
+
+    bulb.style.filter =
+    "none";
+
+    circuitOn = false;
+  }
+
+}
+
+/* ================================================= */
+/* MODULE 2 QUIZ */
+/* ================================================= */
+
+function checkModule2Quiz(button,correct){
+
+  const allButtons =
+  button.parentElement.querySelectorAll(
+    ".quiz-btn"
+  );
+
+  allButtons.forEach(btn => {
+
+    btn.style.background = "#eef5ff";
+    btn.style.color = "#222";
+
+  });
+
+  if(correct){
+
+    button.style.background = "#00c853";
+    button.style.color = "white";
+
+    sessionStorage.setItem(
+      "module2Quiz",
+      "true"
+    );
+
+  }
+
+  else{
+
+    button.style.background = "#ff5252";
+    button.style.color = "white";
+
+    sessionStorage.setItem(
+      "module2Quiz",
+      "false"
+    );
+
+  }
+
+}
+
+/* ================================================= */
+/* MODULE 2 KBAT */
+/* ================================================= */
+
+function submitModule2Challenge(){
+
+  const answer =
+  document
+  .getElementById("module2Answer")
+  .value
+  .toLowerCase();
+
+  const feedback =
+  document.getElementById(
+    "module2Feedback"
+  );
+
+  if(
+    answer.includes("selari") ||
+    answer.includes("sendiri") ||
+    answer.includes("berasingan")
+  ){
+
+    feedback.style.display = "block";
+
+    feedback.className =
+    "feedback-box feedback-success";
+
+    feedback.innerHTML =
+    `
+    <h3>✅ Jawapan Bagus!</h3>
+
+    <p>
+      Sambungan selari membolehkan
+      setiap peralatan berfungsi secara
+      berasingan dan lebih selamat.
+    </p>
+    `;
+
+    sessionStorage.setItem(
+      "module2Challenge",
+      "true"
+    );
+
+  }
+
+  else{
+
+    feedback.style.display = "block";
+
+    feedback.className =
+    "feedback-box feedback-error";
+
+    feedback.innerHTML =
+    `
+    <h3>❌ Cuba Lagi</h3>
+
+    <p>
+      Fikirkan tentang fungsi setiap
+      peralatan dalam rumah.
+    </p>
+    `;
+
+    sessionStorage.setItem(
+      "module2Challenge",
+      "false"
+    );
+
+  }
+
+}
+
+/* ================================================= */
+/* COMPLETE MODULE 2 */
+/* ================================================= */
+
+function completeModule2(){
+
+  const quiz =
+  sessionStorage.getItem(
+    "module2Quiz"
+  );
+
+  const challenge =
+  sessionStorage.getItem(
+    "module2Challenge"
+  );
+
+  if(quiz !== "true"){
+
+    alert(
+      "Sila lengkapkan Quiz dahulu 😊"
+    );
+
+    return;
+  }
+
+  if(challenge !== "true"){
+
+    alert(
+      "Sila jawab Cabar Minda dahulu 😊"
+    );
+
+    return;
+  }
+
+  sessionStorage.setItem(
+    "module2",
+    "completed"
+  );
+
+  alert(
+    "🎉 Tahniah! Anda telah menyelesaikan Modul 2"
+  );
+
+  window.location.href =
+  "modul3.html";
 
 }
