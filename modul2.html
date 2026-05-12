@@ -418,44 +418,245 @@
 </section>
 
 <!-- ===================== SIMULATION ===================== -->
+<!-- ================================================= -->
+<!-- SMART CIRCUIT BUILDER -->
+<!-- LETAKKAN DALAM module2.html -->
+<!-- GANTIKAN SECTION SIMULATION LAMA -->
+<!-- ================================================= -->
 
-<section class="interactive-section">
+<section class="smart-circuit-section">
+
+  <!-- TITLE -->
 
   <div class="section-title">
 
     <span class="section-tag">
 
-      Simulasi Elektrik
+      Simulasi Interaktif
 
     </span>
 
     <h2>
 
-      🧪 Simulasi Interaktif
+      ⚡ Bina Litar Elektrik
 
     </h2>
 
+    <p class="simulation-subtitle">
+
+      Pilih komponen yang diperlukan
+      untuk membina litar elektrik
+      yang lengkap dan selamat.
+
+    </p>
+
   </div>
 
-  <p class="simulation-description">
+  <!-- MAIN SIMULATION -->
 
-    Tekan suis untuk melengkapkan litar
-    dan lihat bagaimana mentol menyala.
+  <div class="smart-circuit-container">
 
-  </p>
+    <!-- LEFT PANEL -->
 
-  <div class="circuit-simulation">
+    <div class="component-panel">
 
-    <img id="circuitBulb"
-      src="images/bulb-off.png"
-      alt="Mentol">
+      <h3>
 
-    <button class="btn simulation-btn"
-      onclick="toggleCircuit()">
+        🔧 Pilih Komponen
 
-      Tekan Suis
+      </h3>
 
-    </button>
+      <!-- COMPONENTS -->
+
+      <div class="component-list">
+
+        <!-- BATTERY -->
+
+        <label class="component-card">
+
+          <input type="checkbox"
+            id="battery">
+
+          <div class="component-content">
+
+            <div class="component-icon">
+
+              🔋
+
+            </div>
+
+            <div>
+
+              <h4>
+
+                Bateri
+
+              </h4>
+
+              <p>
+
+                Membekalkan tenaga elektrik.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </label>
+
+        <!-- SWITCH -->
+
+        <label class="component-card">
+
+          <input type="checkbox"
+            id="switch">
+
+          <div class="component-content">
+
+            <div class="component-icon">
+
+              🎛️
+
+            </div>
+
+            <div>
+
+              <h4>
+
+                Suis
+
+              </h4>
+
+              <p>
+
+                Mengawal arus elektrik.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </label>
+
+        <!-- BULB -->
+
+        <label class="component-card">
+
+          <input type="checkbox"
+            id="bulb">
+
+          <div class="component-content">
+
+            <div class="component-icon">
+
+              💡
+
+            </div>
+
+            <div>
+
+              <h4>
+
+                Mentol
+
+              </h4>
+
+              <p>
+
+                Menggunakan tenaga elektrik.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </label>
+
+        <!-- WIRE -->
+
+        <label class="component-card">
+
+          <input type="checkbox"
+            id="wire">
+
+          <div class="component-content">
+
+            <div class="component-icon">
+
+              🔌
+
+            </div>
+
+            <div>
+
+              <h4>
+
+                Wayar
+
+              </h4>
+
+              <p>
+
+                Menyambungkan komponen.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </label>
+
+      </div>
+
+      <!-- BUTTON -->
+
+      <button class="btn test-btn"
+        onclick="testCircuit()">
+
+        ⚡ Uji Litar
+
+      </button>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+
+    <div class="simulation-panel">
+
+      <div class="simulation-board">
+
+        <!-- CIRCUIT -->
+
+        <div class="circuit-line"></div>
+
+        <!-- BULB -->
+
+        <div class="bulb-area">
+
+          <img
+            id="smartBulb"
+            src="images/bulb-off.png"
+            alt="Bulb">
+
+        </div>
+
+        <!-- STATUS -->
+
+        <div id="circuitStatus"
+          class="circuit-status">
+
+          Pilih komponen dan tekan
+          "Uji Litar"
+
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 

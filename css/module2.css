@@ -163,7 +163,7 @@
 
 .hero-content p{
 
-  font-size:1.25rem;
+  font-size:1.2rem;
 
   line-height:2;
 
@@ -224,7 +224,7 @@
 .badge-section,
 .module-complete{
 
-  padding:120px 8%;
+  padding:80px 8%;
 }
 
 /* ================================================= */
@@ -235,12 +235,12 @@
 
   text-align:center;
 
-  margin-bottom:70px;
+  margin-bottom:45px;
 }
 
 .section-title h2{
 
-  font-size:3.5rem;
+  font-size:3.3rem;
 
   color:var(--dark);
 }
@@ -253,13 +253,13 @@
 
   background:white;
 
-  padding:80px;
+  padding:70px;
 
   border-radius:40px;
 
   display:flex;
 
-  gap:45px;
+  gap:40px;
 
   align-items:flex-start;
 
@@ -301,7 +301,7 @@
 
   font-size:3rem;
 
-  margin-bottom:30px;
+  margin-bottom:25px;
 
   color:var(--dark);
 }
@@ -310,7 +310,7 @@
 
   line-height:2;
 
-  font-size:1.1rem;
+  font-size:1.05rem;
 }
 
 /* ================================================= */
@@ -371,7 +371,7 @@
 
   background:white;
 
-  padding:45px 25px;
+  padding:40px 25px;
 
   border-radius:35px;
 
@@ -442,11 +442,11 @@
 
 .flow-note{
 
-  margin-top:50px;
+  margin-top:40px;
 
   text-align:center;
 
-  font-size:1.1rem;
+  font-size:1.05rem;
 
   line-height:2;
 }
@@ -466,11 +466,11 @@
 
   margin:auto;
 
-  margin-bottom:45px;
+  margin-bottom:40px;
 
   line-height:2;
 
-  font-size:1.1rem;
+  font-size:1.05rem;
 }
 
 .video-container{
@@ -509,7 +509,7 @@
 
   margin:auto;
 
-  margin-bottom:40px;
+  margin-bottom:35px;
 
   line-height:2;
 }
@@ -527,7 +527,7 @@
   #1e293b
   );
 
-  padding:80px;
+  padding:70px;
 
   border-radius:40px;
 
@@ -561,7 +561,7 @@
 
   margin:auto;
 
-  margin-bottom:45px;
+  margin-bottom:40px;
 
   position:relative;
 
@@ -588,14 +588,14 @@
   grid-template-columns:
   repeat(auto-fit,minmax(320px,1fr));
 
-  gap:35px;
+  gap:30px;
 }
 
 .connection-card{
 
   background:white;
 
-  padding:55px 40px;
+  padding:50px 35px;
 
   border-radius:35px;
 
@@ -632,7 +632,7 @@
 
   font-weight:700;
 
-  margin-bottom:25px;
+  margin-bottom:22px;
 }
 
 .connection-badge.success{
@@ -644,9 +644,9 @@
 
 .connection-card h3{
 
-  font-size:2rem;
+  font-size:1.9rem;
 
-  margin-bottom:20px;
+  margin-bottom:18px;
 
   color:var(--dark);
 }
@@ -655,7 +655,7 @@
 
   line-height:2;
 
-  margin-bottom:20px;
+  margin-bottom:18px;
 }
 
 .connection-card ul{
@@ -665,7 +665,7 @@
 
 .connection-card li{
 
-  margin-bottom:15px;
+  margin-bottom:12px;
 
   line-height:1.8;
 }
@@ -688,7 +688,7 @@
 
   background:white;
 
-  padding:80px;
+  padding:70px;
 
   border-radius:40px;
 
@@ -723,7 +723,7 @@
 
 .quiz-top{
 
-  margin-bottom:35px;
+  margin-bottom:30px;
 }
 
 .quiz-badge{
@@ -745,7 +745,7 @@
 
   font-size:2rem;
 
-  margin-bottom:45px;
+  margin-bottom:40px;
 
   line-height:1.5;
 }
@@ -754,9 +754,9 @@
 
   width:100%;
 
-  padding:24px;
+  padding:22px;
 
-  margin-bottom:25px;
+  margin-bottom:20px;
 
   border:none;
 
@@ -794,7 +794,7 @@
 
   background:white;
 
-  padding:80px;
+  padding:70px;
 
   border-radius:40px;
 
@@ -807,9 +807,9 @@
 
   line-height:2;
 
-  font-size:1.1rem;
+  font-size:1.05rem;
 
-  margin-bottom:35px;
+  margin-bottom:30px;
 }
 
 .challenge-card textarea{
@@ -830,7 +830,7 @@
 
   font-size:1rem;
 
-  margin-bottom:35px;
+  margin-bottom:30px;
 
   outline:none;
 
@@ -851,7 +851,7 @@
 
 .feedback-box{
 
-  margin-top:35px;
+  margin-top:30px;
 
   padding:30px;
 
@@ -888,7 +888,7 @@
 
   background:white;
 
-  padding:80px;
+  padding:70px;
 
   border-radius:40px;
 
@@ -899,7 +899,7 @@
 
 .reflection-card p{
 
-  margin-bottom:35px;
+  margin-bottom:30px;
 
   line-height:2;
 }
@@ -944,7 +944,7 @@
 
   color:white;
 
-  padding:80px;
+  padding:70px;
 
   border-radius:40px;
 
@@ -965,14 +965,14 @@
 
   font-size:3rem;
 
-  margin-bottom:25px;
+  margin-bottom:20px;
 }
 
 .badge-card p{
 
   line-height:2;
 
-  font-size:1.1rem;
+  font-size:1.05rem;
 }
 
 /* ================================================= */
@@ -988,16 +988,16 @@
 
   font-size:5rem;
 
-  margin-bottom:25px;
+  margin-bottom:20px;
 
   color:var(--dark);
 }
 
 .module-complete p{
 
-  font-size:1.2rem;
+  font-size:1.15rem;
 
-  margin-bottom:40px;
+  margin-bottom:35px;
 }
 
 /* ================================================= */
@@ -1039,6 +1039,21 @@
     flex-direction:column;
   }
 
+  .intro-section-module2,
+  .safety-section,
+  .flow-section,
+  .video-section,
+  .interactive-section,
+  .connection-section,
+  .quiz-section,
+  .challenge-section,
+  .reflection-section,
+  .badge-section,
+  .module-complete{
+
+    padding:60px 6%;
+  }
+
   .intro-card{
 
     flex-direction:column;
@@ -1066,7 +1081,8 @@
   .challenge-card,
   .reflection-card,
   .badge-card,
-  .circuit-simulation{
+  .circuit-simulation,
+  .connection-card{
 
     padding:45px 25px;
   }
@@ -1103,6 +1119,395 @@
   .quiz-card h3{
 
     font-size:1.5rem;
+  }
+
+}
+
+/* ================================================= */
+/* SMART CIRCUIT SECTION */
+/* ================================================= */
+
+.smart-circuit-section{
+
+  padding:120px 8%;
+}
+
+/* ================================================= */
+/* SUBTITLE */
+/* ================================================= */
+
+.simulation-subtitle{
+
+  max-width:850px;
+
+  margin:auto;
+
+  margin-top:20px;
+
+  line-height:2;
+
+  font-size:1.1rem;
+}
+
+/* ================================================= */
+/* MAIN CONTAINER */
+/* ================================================= */
+
+.smart-circuit-container{
+
+  display:grid;
+
+  grid-template-columns:
+  380px 1fr;
+
+  gap:45px;
+
+  align-items:stretch;
+}
+
+/* ================================================= */
+/* COMPONENT PANEL */
+/* ================================================= */
+
+.component-panel{
+
+  background:
+  linear-gradient(
+  135deg,
+  #0f172a,
+  #1e293b
+  );
+
+  padding:40px;
+
+  border-radius:35px;
+
+  color:white;
+
+  box-shadow:
+  0 25px 50px rgba(0,0,0,0.2);
+}
+
+.component-panel h3{
+
+  font-size:2rem;
+
+  margin-bottom:35px;
+}
+
+/* ================================================= */
+/* COMPONENT LIST */
+/* ================================================= */
+
+.component-list{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:20px;
+}
+
+/* ================================================= */
+/* COMPONENT CARD */
+/* ================================================= */
+
+.component-card{
+
+  display:block;
+
+  cursor:pointer;
+}
+
+.component-card input{
+
+  display:none;
+}
+
+.component-content{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:18px;
+
+  background:
+  rgba(255,255,255,0.08);
+
+  border:
+  2px solid transparent;
+
+  padding:22px;
+
+  border-radius:22px;
+
+  transition:0.3s ease;
+}
+
+.component-card:hover .component-content{
+
+  transform:
+  translateY(-5px);
+
+  background:
+  rgba(255,255,255,0.12);
+}
+
+.component-card input:checked
++ .component-content{
+
+  border:
+  2px solid #00e5ff;
+
+  background:
+  rgba(0,229,255,0.12);
+
+  box-shadow:
+  0 0 25px rgba(0,229,255,0.25);
+}
+
+.component-icon{
+
+  font-size:2.5rem;
+}
+
+.component-content h4{
+
+  margin-bottom:8px;
+
+  font-size:1.2rem;
+}
+
+.component-content p{
+
+  font-size:0.95rem;
+
+  line-height:1.6;
+
+  opacity:0.85;
+}
+
+/* ================================================= */
+/* TEST BUTTON */
+/* ================================================= */
+
+.test-btn{
+
+  width:100%;
+
+  margin-top:35px;
+}
+
+/* ================================================= */
+/* SIMULATION PANEL */
+/* ================================================= */
+
+.simulation-panel{
+
+  background:
+  linear-gradient(
+  135deg,
+  #0f172a,
+  #1e293b
+  );
+
+  border-radius:35px;
+
+  padding:50px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  box-shadow:
+  0 25px 50px rgba(0,0,0,0.2);
+}
+
+/* ================================================= */
+/* BOARD */
+/* ================================================= */
+
+.simulation-board{
+
+  position:relative;
+
+  height:100%;
+
+  min-height:500px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+  align-items:center;
+}
+
+/* ================================================= */
+/* CIRCUIT LINE */
+/* ================================================= */
+
+.circuit-line{
+
+  position:absolute;
+
+  width:70%;
+
+  height:12px;
+
+  background:
+  linear-gradient(
+  90deg,
+  #334155,
+  #64748b
+  );
+
+  border-radius:50px;
+
+  top:50%;
+
+  transform:translateY(-50%);
+}
+
+/* ================================================= */
+/* BULB */
+/* ================================================= */
+
+.bulb-area{
+
+  position:relative;
+
+  z-index:2;
+}
+
+#smartBulb{
+
+  width:240px;
+
+  transition:0.4s ease;
+
+  filter:
+  drop-shadow(0 0 0 transparent);
+}
+
+/* ================================================= */
+/* STATUS */
+/* ================================================= */
+
+.circuit-status{
+
+  margin-top:40px;
+
+  background:
+  rgba(255,255,255,0.08);
+
+  color:white;
+
+  padding:20px 30px;
+
+  border-radius:18px;
+
+  text-align:center;
+
+  line-height:1.8;
+
+  font-weight:600;
+
+  max-width:600px;
+}
+
+/* ================================================= */
+/* SUCCESS */
+/* ================================================= */
+
+.success-status{
+
+  background:
+  rgba(0,200,83,0.15);
+
+  border:
+  2px solid rgba(0,200,83,0.35);
+
+  color:#69f0ae;
+}
+
+/* ================================================= */
+/* ERROR */
+/* ================================================= */
+
+.error-status{
+
+  background:
+  rgba(255,82,82,0.15);
+
+  border:
+  2px solid rgba(255,82,82,0.35);
+
+  color:#ff8a80;
+}
+
+/* ================================================= */
+/* GLOW */
+/* ================================================= */
+
+.bulb-on{
+
+  filter:
+  drop-shadow(0 0 40px #ffd54f)
+  drop-shadow(0 0 80px #ffeb3b);
+
+  animation:
+  glowBulb 1s infinite alternate;
+}
+
+@keyframes glowBulb{
+
+  from{
+
+    transform:scale(1);
+  }
+
+  to{
+
+    transform:scale(1.05);
+  }
+
+}
+
+/* ================================================= */
+/* RESPONSIVE */
+/* ================================================= */
+
+@media(max-width:992px){
+
+  .smart-circuit-container{
+
+    grid-template-columns:1fr;
+  }
+
+}
+
+/* ================================================= */
+/* MOBILE */
+/* ================================================= */
+
+@media(max-width:768px){
+
+  .component-panel,
+  .simulation-panel{
+
+    padding:30px;
+  }
+
+  #smartBulb{
+
+    width:170px;
+  }
+
+  .simulation-board{
+
+    min-height:380px;
   }
 
 }

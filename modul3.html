@@ -1,34 +1,775 @@
 <!DOCTYPE html>
 <html lang="ms">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modul 3</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Modul 3 - Analisis Sistem Elektrik
+  </title>
+
+  <!-- GLOBAL CSS -->
+
+  <link rel="stylesheet"
+    href="css/style.css">
+
+  <!-- MODULE 3 CSS -->
+
+  <link rel="stylesheet"
+    href="css/module3.css">
+
+  <!-- FONT AWESOME -->
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
+
+<!-- ===================== NAVBAR ===================== -->
 
 <header id="navbar-container"></header>
 
-<section class="module">
-  <h2>SP 2.2.5 - Analisis Sistem Elektrik</h2>
+<!-- ===================== HERO ===================== -->
 
-  <div class="challenge-box">
-    <h3>Troubleshooting Challenge</h3>
+<section class="module3-hero">
+
+  <!-- GLOW -->
+
+  <div class="hero-glow glow1"></div>
+  <div class="hero-glow glow2"></div>
+
+  <!-- OVERLAY -->
+
+  <div class="hero-overlay"></div>
+
+  <!-- CONTENT -->
+
+  <div class="hero-content">
+
+    <span class="module-tag">
+
+      ⚡ SP 2.3.5 • Analisis Sistem Elektrik
+
+    </span>
+
+    <h1>
+
+      Smart Gadget
+      <br>
+
+      Analyzer Lab
+
+    </h1>
 
     <p>
-      Lampu tidak menyala walaupun suis telah dihidupkan.
-      Kenal pasti kemungkinan masalah.
+
+      Analisis elemen sistem elektrik
+      yang digunakan dalam gajet
+      dan produk elektronik harian.
+
     </p>
 
-    <textarea placeholder="Tulis jawapan anda di sini..."></textarea>
+    <div class="hero-buttons">
+
+      <a href="#gadget"
+        class="btn">
+
+        Mulakan Analisis
+
+      </a>
+
+      <a href="#quiz"
+        class="btn-outline">
+
+        🎮 Quiz Interaktif
+
+      </a>
+
+    </div>
+
   </div>
 
-  <button class="btn" onclick="completeModule(3)">
-    Tandakan Modul Selesai
-  </button>
 </section>
 
+<!-- ===================== INTRO ===================== -->
+
+<section class="module3-intro">
+
+  <div class="intro-card">
+
+    <div class="intro-icon">
+
+      <i class="fa-solid fa-microchip"></i>
+
+    </div>
+
+    <div class="intro-text">
+
+      <span class="section-tag">
+
+        Smart Gadget Learning
+
+      </span>
+
+      <h2>
+
+        Apa Itu Analisis
+        Sistem Elektrik?
+
+      </h2>
+
+      <p>
+
+        Sistem elektrik digunakan
+        dalam hampir semua gajet moden.
+
+        Dengan menganalisis elemen
+        sistem elektrik, murid dapat
+        memahami bagaimana sesuatu
+        gajet berfungsi dan mengenal
+        pasti fungsi setiap komponen.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===================== REAL WORLD ===================== -->
+
+<section class="realworld-section">
+
+  <div class="scenario-card">
+
+    <span class="scenario-tag">
+
+      🌍 Situasi Dunia Sebenar
+
+    </span>
+
+    <h2>
+
+      Lampu Meja Pintar
+
+    </h2>
+
+    <p>
+
+      Amir ingin menghasilkan lampu
+      meja pintar untuk bilik belajarnya.
+
+      Apakah elemen sistem elektrik
+      yang diperlukan supaya lampu
+      tersebut boleh berfungsi?
+
+    </p>
+
+  </div>
+
+</section>
+
+<!-- ===================== GADGET ANALYZER ===================== -->
+
+<section class="gadget-section"
+  id="gadget">
+
+  <div class="section-title">
+
+    <span class="section-tag">
+
+      Interactive Analyzer
+
+    </span>
+
+    <h2>
+
+      🔍 Analisis Gajet Pintar
+
+    </h2>
+
+    <p class="section-subtitle">
+
+      Klik pada elemen sistem elektrik
+      untuk melihat fungsi setiap komponen.
+
+    </p>
+
+  </div>
+
+  <!-- ANALYZER -->
+
+  <div class="gadget-analyzer">
+
+    <!-- LEFT -->
+
+    <div class="gadget-preview">
+
+      <img
+        src="images/smart-lamp.png"
+        alt="Smart Lamp">
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="analyzer-panel">
+
+      <button class="analyzer-btn"
+        onclick="showAnalyzerInfo('source')">
+
+        🔋 Sumber
+
+      </button>
+
+      <button class="analyzer-btn"
+        onclick="showAnalyzerInfo('medium')">
+
+        🔌 Medium
+
+      </button>
+
+      <button class="analyzer-btn"
+        onclick="showAnalyzerInfo('control')">
+
+        🎛️ Kawalan
+
+      </button>
+
+      <button class="analyzer-btn"
+        onclick="showAnalyzerInfo('load')">
+
+        💡 Beban
+
+      </button>
+
+      <!-- RESULT -->
+
+      <div id="analyzerInfo"
+        class="analyzer-info">
+
+        Klik elemen untuk melihat
+        fungsi komponen.
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===================== MATCHING GAME ===================== -->
+
+<section class="matching-section">
+
+  <div class="section-title">
+
+    <span class="section-tag">
+
+      Drag & Match
+
+    </span>
+
+    <h2>
+
+      🧠 Padankan Elemen
+
+    </h2>
+
+  </div>
+
+  <div class="matching-grid">
+
+    <!-- LEFT -->
+
+    <div class="matching-column">
+
+      <div class="match-item">
+
+        🔋 Sumber
+
+      </div>
+
+      <div class="match-item">
+
+        🎛️ Kawalan
+
+      </div>
+
+      <div class="match-item">
+
+        🔌 Medium
+
+      </div>
+
+      <div class="match-item">
+
+        💡 Beban
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="matching-column">
+
+      <button class="match-btn"
+        onclick="checkMatch(this,false)">
+
+        Menghasilkan cahaya
+
+      </button>
+
+      <button class="match-btn"
+        onclick="checkMatch(this,true)">
+
+        Membekalkan tenaga elektrik
+
+      </button>
+
+      <button class="match-btn"
+        onclick="checkMatch(this,false)">
+
+        Menghasilkan bunyi
+
+      </button>
+
+      <button class="match-btn"
+        onclick="checkMatch(this,false)">
+
+        Menyimpan data
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===================== SMART BUILDER ===================== -->
+
+<section class="builder-section">
+
+  <div class="section-title">
+
+    <span class="section-tag">
+
+      Smart Builder
+
+    </span>
+
+    <h2>
+
+      ⚡ Bina Gajet Pintar
+
+    </h2>
+
+    <p class="section-subtitle">
+
+      Pilih elemen yang diperlukan
+      untuk membina lampu pintar.
+
+    </p>
+
+  </div>
+
+  <div class="builder-container">
+
+    <!-- COMPONENT -->
+
+    <div class="builder-panel">
+
+      <label class="builder-card">
+
+        <input type="checkbox"
+          id="m3battery">
+
+        <div class="builder-content">
+
+          🔋 Bateri
+
+        </div>
+
+      </label>
+
+      <label class="builder-card">
+
+        <input type="checkbox"
+          id="m3switch">
+
+        <div class="builder-content">
+
+          🎛️ Suis
+
+        </div>
+
+      </label>
+
+      <label class="builder-card">
+
+        <input type="checkbox"
+          id="m3wire">
+
+        <div class="builder-content">
+
+          🔌 Wayar
+
+        </div>
+
+      </label>
+
+      <label class="builder-card">
+
+        <input type="checkbox"
+          id="m3bulb">
+
+        <div class="builder-content">
+
+          💡 Mentol
+
+        </div>
+
+      </label>
+
+      <button class="btn"
+        onclick="buildSmartGadget()">
+
+        Bina Gajet
+
+      </button>
+
+    </div>
+
+    <!-- RESULT -->
+
+    <div class="builder-preview">
+
+      <img
+        id="smartLamp"
+        src="images/bulb-off.png"
+        alt="Lamp">
+
+      <div id="builderStatus"
+        class="builder-status">
+
+        Pilih elemen untuk membina gajet.
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===================== VIDEO ===================== -->
+
+<section class="video-section">
+
+  <div class="section-title">
+
+    <span class="section-tag">
+
+      Multimedia Learning
+
+    </span>
+
+    <h2>
+
+      🎥 Video Pembelajaran
+
+    </h2>
+
+  </div>
+
+  <div class="video-container">
+
+    <iframe
+      src="https://www.youtube.com/embed/98Ma-KllLZA"
+      title="Video"
+      allowfullscreen>
+    </iframe>
+
+  </div>
+
+</section>
+
+<!-- ===================== QUIZ ===================== -->
+
+<section class="quiz-section"
+  id="quiz">
+
+  <div class="section-title">
+
+    <span class="section-tag">
+
+      Gamifikasi
+
+    </span>
+
+    <h2>
+
+      🎮 Quiz Interaktif
+
+    </h2>
+
+  </div>
+
+  <div class="quiz-card">
+
+    <div class="quiz-badge">
+
+      Soalan KBAT
+
+    </div>
+
+    <h3>
+
+      Dalam lampu meja pintar,
+      apakah fungsi suis?
+
+    </h3>
+
+    <button class="quiz-btn"
+      onclick="checkModule3Quiz(this,false)">
+
+      Menyimpan tenaga elektrik
+
+    </button>
+
+    <button class="quiz-btn"
+      onclick="checkModule3Quiz(this,true)">
+
+      Mengawal pengaliran arus
+
+    </button>
+
+    <button class="quiz-btn"
+      onclick="checkModule3Quiz(this,false)">
+
+      Menghasilkan cahaya
+
+    </button>
+
+  </div>
+
+</section>
+
+<!-- ===================== TROUBLESHOOTING ===================== -->
+
+<section class="troubleshoot-section">
+
+  <div class="trouble-card">
+
+    <div class="section-title">
+
+      <span class="section-tag">
+
+        Troubleshooting
+
+      </span>
+
+      <h2>
+
+        ⚠️ Analisis Masalah
+
+      </h2>
+
+    </div>
+
+    <p>
+
+      Lampu pintar tidak menyala.
+      Apakah kemungkinan masalah?
+
+    </p>
+
+    <button class="trouble-btn"
+      onclick="checkTrouble(this,true)">
+
+      🔋 Bateri habis
+
+    </button>
+
+    <button class="trouble-btn"
+      onclick="checkTrouble(this,false)">
+
+      💡 Lampu terlalu terang
+
+    </button>
+
+    <button class="trouble-btn"
+      onclick="checkTrouble(this,false)">
+
+      📱 Telefon tidak dicas
+
+    </button>
+
+  </div>
+
+</section>
+
+<!-- ===================== KBAT ===================== -->
+
+<section class="challenge-section">
+
+  <div class="challenge-card">
+
+    <div class="section-title">
+
+      <span class="section-tag">
+
+        KBAT Challenge
+
+      </span>
+
+      <h2>
+
+        🔥 Cabar Minda
+
+      </h2>
+
+    </div>
+
+    <p>
+
+      Mengapa medium seperti wayar
+      penting dalam sistem elektrik?
+
+    </p>
+
+    <textarea
+      id="module3Answer"
+      placeholder="Taip jawapan anda di sini..."></textarea>
+
+    <button class="btn"
+      onclick="submitModule3Challenge()">
+
+      Hantar Jawapan
+
+    </button>
+
+    <div id="module3Feedback"
+      class="feedback-box">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===================== MINI REPORT ===================== -->
+
+<section class="report-section">
+
+  <div class="report-card">
+
+    <div class="section-title">
+
+      <span class="section-tag">
+
+        Final Project
+
+      </span>
+
+      <h2>
+
+        📝 Mini Laporan Gajet
+
+      </h2>
+
+    </div>
+
+    <input type="text"
+      placeholder="Nama Gajet">
+
+    <textarea
+      placeholder="Nyatakan elemen sistem elektrik yang digunakan..."></textarea>
+
+    <textarea
+      placeholder="Terangkan fungsi setiap elemen..."></textarea>
+
+  </div>
+
+</section>
+
+<!-- ===================== BADGE ===================== -->
+
+<section class="badge-section">
+
+  <div class="badge-card">
+
+    <div class="badge-icon">
+
+      🏆
+
+    </div>
+
+    <h2>
+
+      Badge Dibuka
+
+    </h2>
+
+    <p>
+
+      Tahniah! Anda berjaya membuka
+      badge Juruteknik Elektrik Muda.
+
+    </p>
+
+  </div>
+
+</section>
+
+<!-- ===================== COMPLETE ===================== -->
+
+<section class="module-complete">
+
+  <h2>
+
+    Tahniah!
+
+  </h2>
+
+  <p>
+
+    Anda telah menyelesaikan Modul 3.
+
+  </p>
+
+  <button class="btn"
+    onclick="completeModule3()">
+
+    Tamatkan Modul
+
+  </button>
+
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+
+<footer>
+
+  <p>
+
+    © 2026 Modul Elektronik Interaktif
+    RBT Tingkatan 2
+
+  </p>
+
+</footer>
+
 <script src="js/script.js"></script>
+
 </body>
 </html>

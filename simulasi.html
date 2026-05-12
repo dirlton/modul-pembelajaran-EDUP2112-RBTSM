@@ -1,23 +1,611 @@
 <!DOCTYPE html>
 <html lang="ms">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simulasi</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Simulasi Elektrik Interaktif
+  </title>
+
+  <!-- GLOBAL CSS -->
+
+  <link rel="stylesheet"
+    href="css/style.css">
+
+  <!-- PAGE CSS -->
+
+  <link rel="stylesheet"
+    href="css/simulasi.css">
+
+  <!-- ICON -->
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
+
+<!-- ================================================= -->
+<!-- NAVBAR -->
+<!-- ================================================= -->
 
 <header id="navbar-container"></header>
 
-<section class="module">
-  <h2>Simulasi Litar Elektrik</h2>
+<!-- ================================================= -->
+<!-- HERO -->
+<!-- ================================================= -->
 
-  <iframe width="100%" height="500"
-    src="LINK_TINKERCAD_ANDA">
-  </iframe>
+<section class="simulation-hero">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <span class="hero-tag">
+
+      ⚡ Electrical Virtual Lab
+
+    </span>
+
+    <h1>
+
+      Simulasi Elektrik
+      <br>
+
+      Interaktif
+
+    </h1>
+
+    <p>
+
+      Belajar sistem elektrik melalui
+      simulasi maya, cabaran interaktif
+      dan penyelesaian masalah dunia sebenar.
+
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#mission"
+        class="btn">
+
+        Mulakan Misi
+
+      </a>
+
+      <a href="#advanced-lab"
+        class="btn-outline">
+
+        🚀 Advanced Lab
+
+      </a>
+
+    </div>
+
+  </div>
+
 </section>
 
+<!-- ================================================= -->
+<!-- STORY MISSION -->
+<!-- ================================================= -->
+
+<section class="mission-section"
+  id="mission">
+
+  <div class="mission-card">
+
+    <div class="mission-icon">
+
+      🏠
+
+    </div>
+
+    <div class="mission-content">
+
+      <span class="mission-tag">
+
+        Situasi Dunia Sebenar
+
+      </span>
+
+      <h2>
+
+        Rumah Amir Blackout!
+
+      </h2>
+
+      <p>
+
+        Amir sedang menyiapkan kerja sekolah
+        tetapi lampu rumahnya tidak menyala.
+        Bantu Amir mengenal pasti masalah
+        dan hidupkan semula sistem elektrik.
+
+      </p>
+
+      <a href="#simulation-lab"
+        class="btn">
+
+        ⚡ Baiki Sistem
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- XP SYSTEM -->
+<!-- ================================================= -->
+
+<section class="xp-section">
+
+  <div class="xp-card">
+
+    <div class="xp-icon">
+
+      🏆
+
+    </div>
+
+    <div class="xp-info">
+
+      <h3>
+
+        XP Progress
+
+      </h3>
+
+      <div class="xp-bar">
+
+        <div class="xp-fill"
+          id="xpFill">
+
+        </div>
+
+      </div>
+
+      <p id="xpText">
+
+        0 XP / 100 XP
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- MAIN SIMULATION -->
+<!-- ================================================= -->
+
+<section class="simulation-section"
+  id="simulation-lab">
+
+  <div class="section-title">
+
+    <span class="section-tag">
+
+      Smart Electrical Lab
+
+    </span>
+
+    <h2>
+
+      ⚡ Fix The Circuit
+
+    </h2>
+
+    <p>
+
+      Tekan suis untuk mengaktifkan
+      sistem elektrik rumah Amir.
+
+    </p>
+
+  </div>
+
+  <div class="simulation-container">
+
+    <!-- LEFT CONTROL -->
+
+    <div class="control-panel">
+
+      <h3>
+
+        🎛 Control Panel
+
+      </h3>
+
+      <!-- STATUS -->
+
+      <div class="status-box">
+
+        <p>
+
+          Status Sistem
+
+        </p>
+
+        <span id="systemStatus">
+
+          OFFLINE
+
+        </span>
+
+      </div>
+
+      <!-- VOLTAGE -->
+
+      <div class="status-box">
+
+        <p>
+
+          Voltan
+
+        </p>
+
+        <span id="voltageStatus">
+
+          0V
+
+        </span>
+
+      </div>
+
+      <!-- BUTTONS -->
+
+      <button class="control-btn on-btn"
+        onclick="activateCircuit()">
+
+        ⚡ Aktifkan Suis
+
+      </button>
+
+      <button class="control-btn off-btn"
+        onclick="deactivateCircuit()">
+
+        ⛔ Matikan Sistem
+
+      </button>
+
+      <button class="control-btn reset-btn"
+        onclick="resetSimulation()">
+
+        🔄 Reset Simulasi
+
+      </button>
+
+    </div>
+
+    <!-- RIGHT LAB -->
+
+    <div class="simulation-board">
+
+      <!-- ELECTRIC FLOW -->
+
+      <div class="wire-flow"
+        id="wireFlow">
+
+      </div>
+
+      <!-- BULB -->
+
+      <img
+        src="images/bulb-off.png"
+        alt="Mentol"
+        id="mainBulb">
+
+      <!-- RESULT -->
+
+      <div class="result-box"
+        id="resultBox">
+
+        Tekan suis untuk mengaktifkan
+        sistem elektrik.
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- TROUBLESHOOTING GAME -->
+<!-- ================================================= -->
+
+<section class="troubleshoot-section">
+
+  <div class="section-title">
+
+    <span class="section-tag">
+
+      Troubleshooting Challenge
+
+    </span>
+
+    <h2>
+
+      🧠 Cari Masalah Sistem
+
+    </h2>
+
+    <p>
+
+      Apakah punca lampu tidak menyala?
+
+    </p>
+
+  </div>
+
+  <div class="trouble-grid">
+
+    <!-- OPTION 1 -->
+
+    <button class="trouble-card"
+      onclick="checkProblem(this,false)">
+
+      <span>
+
+        📱
+
+      </span>
+
+      <h3>
+
+        Telefon Rosak
+
+      </h3>
+
+    </button>
+
+    <!-- OPTION 2 -->
+
+    <button class="trouble-card"
+      onclick="checkProblem(this,true)">
+
+      <span>
+
+        🔋
+
+      </span>
+
+      <h3>
+
+        Bateri Habis
+
+      </h3>
+
+    </button>
+
+    <!-- OPTION 3 -->
+
+    <button class="trouble-card"
+      onclick="checkProblem(this,false)">
+
+      <span>
+
+        🖥️
+
+      </span>
+
+      <h3>
+
+        Monitor Pecah
+
+      </h3>
+
+    </button>
+
+  </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- SAFETY CHECK -->
+<!-- ================================================= -->
+
+<section class="safety-section">
+
+  <div class="section-title">
+
+    <span class="section-tag">
+
+      Safety Inspection
+
+    </span>
+
+    <h2>
+
+      ⚠️ Semakan Keselamatan
+
+    </h2>
+
+    <p>
+
+      Pilih sambungan yang selamat.
+
+    </p>
+
+  </div>
+
+  <div class="safety-grid">
+
+    <!-- SAFE -->
+
+    <button class="safety-card"
+      onclick="checkSafety(this,true)">
+
+      <img
+        src="images/safe-wire.jpg"
+        alt="Selamat">
+
+      <h3>
+
+        Sambungan Selamat
+
+      </h3>
+
+    </button>
+
+    <!-- UNSAFE -->
+
+    <button class="safety-card"
+      onclick="checkSafety(this,false)">
+
+      <img
+        src="images/danger-wire.jpg"
+        alt="Bahaya">
+
+      <h3>
+
+        Wayar Rosak
+
+      </h3>
+
+    </button>
+
+  </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- ACHIEVEMENT -->
+<!-- ================================================= -->
+
+<section class="achievement-section">
+
+  <div class="achievement-card">
+
+    <div class="badge-icon">
+
+      ⚡
+
+    </div>
+
+    <h2>
+
+      Badge Dibuka!
+
+    </h2>
+
+    <p>
+
+      Anda berjaya membuka badge:
+
+    </p>
+
+    <h3>
+
+      ⚙ Junior Electrical Engineer
+
+    </h3>
+
+  </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- ADVANCED LAB -->
+<!-- ================================================= -->
+
+<section class="advanced-section"
+  id="advanced-lab">
+
+  <div class="section-title">
+
+    <span class="section-tag">
+
+      Advanced Exploration
+
+    </span>
+
+    <h2>
+
+      🚀 Tinkercad Virtual Lab
+
+    </h2>
+
+    <p>
+
+      Cuba simulasi litar sebenar
+      menggunakan Tinkercad.
+
+    </p>
+
+  </div>
+
+  <div class="tinkercad-container">
+
+    <iframe
+      src="PASTE_LINK_TINKERCAD_SINI">
+    </iframe>
+
+  </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- COMPLETE -->
+<!-- ================================================= -->
+
+<section class="complete-section">
+
+  <h2>
+
+    Tahniah!
+
+  </h2>
+
+  <p>
+
+    Anda berjaya menyelesaikan
+    simulasi elektrik interaktif.
+
+  </p>
+
+  <button class="btn"
+    onclick="finishSimulation()">
+
+    Tamatkan Simulasi
+
+  </button>
+
+</section>
+
+<!-- ================================================= -->
+<!-- FOOTER -->
+<!-- ================================================= -->
+
+<footer>
+
+  <p>
+
+    © 2026 Modul Elektronik Interaktif
+    RBT Tingkatan 2
+
+  </p>
+
+</footer>
+
+<!-- ================================================= -->
+<!-- SCRIPT -->
+<!-- ================================================= -->
+
 <script src="js/script.js"></script>
+
 </body>
 </html>
